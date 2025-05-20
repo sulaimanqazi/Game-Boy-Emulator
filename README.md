@@ -17,6 +17,6 @@ These parts include the CPU, the RAM, the memory, the IO, the PPU, and the UI.
 
 The essence of how the emulator works is by reading a ROM file byte by byte, decoding each byte which is linked to a CPU instruction, and completing that instruction.
 
-Unlike my Chip-8 intrepeter, the CPU is more complex. Here I implemented the Sharp LR35902. It uses several opcodes to complete the functions of a CPU. For example, one opcode I implemented (0x01) LD BC, u16 sets the register pair BC to a specific 16-bit value found in the location of the program counter. Since most opcodes function in similar ways I just implemented multiple methods within each opcode.
+Unlike my [Chip-8 intrepeter]([url](https://github.com/sulaimanqazi/CHIP8-CPP)), the CPU is more complex. Here I implemented the Sharp LR35902. It uses several opcodes to complete the functions of a CPU. For example, one opcode I implemented (0x01) LD BC, u16 sets the register pair BC to a specific 16-bit value found in the location of the program counter. Since most opcodes function in similar ways I just implemented multiple methods within each opcode.
 
 
